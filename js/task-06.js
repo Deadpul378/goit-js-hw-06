@@ -4,7 +4,7 @@ function inputCheck() {
   const length = inputValueEl.dataset.length;
   let inputLength = inputValueEl.value.length.toString();
   if (length === inputLength) {
-    return inputValueEl.classList.replace("invalid", "valid");
+    return inputValueEl.classList.add("valid");
   }
   inputValueEl.classList.add("invalid");
   inputValueEl.classList.remove("valid");
